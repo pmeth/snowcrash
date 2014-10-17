@@ -111,7 +111,7 @@ namespace snowcrashtest {
             scpl::Signature signature;
             scpl::SignatureTraits signatureTraits(traits);
 
-            signature = scpl::MSONSectionProcessorBase<snowcrash::Blueprint>
+            signature = scpl::SignatureSectionProcessorBase<snowcrash::Blueprint>
                             ::parseSignature(markdownAST.children().begin(), pd, signatureTraits, out);
 
             return signature;
